@@ -1,0 +1,27 @@
+{
+    "name": "legal-toolkit",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "vite build",
+        "dev": "vite",
+        "preview": "vite preview"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "type": "module",
+    "dependencies": {
+        "react": "^19.1.1",
+        "react-dom": "^19.1.1"
+    },
+    "devDependencies": {
+        "@types/react": "^19.1.12",
+        "@types/react-dom": "^19.1.9",
+        "@vitejs/plugin-react": "^5.0.2",
+        "typescript": "^5.9.2",
+        "vite": "^7.1.5"
+    }
+}
