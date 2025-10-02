@@ -1,8 +1,18 @@
-﻿export default function App() {
+// src/App.tsx
+import React from "react";
+import LegalToolkitPro from "@/components/LegalToolkitPro";
+import { SubscriptionProvider } from "@/context/SubscriptionContext";
+
+const App: React.FC = () => {
   return (
-    <div style={{padding: 24, fontFamily: 'system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial'}}>
-      <h1>Legal Toolkit</h1>
-      <p>Vite + React + TypeScript is wired up and building.</p>
-    </div>
-  )
-}
+    <SubscriptionProvider>
+      <div className="min-h-screen bg-background text-foreground">
+        <div className="mx-auto max-w-7xl py-6 px-4">
+          <LegalToolkitPro />
+        </div>
+      </div>
+    </SubscriptionProvider>
+  );
+};
+
+export default App;
