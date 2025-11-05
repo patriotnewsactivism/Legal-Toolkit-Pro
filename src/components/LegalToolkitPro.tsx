@@ -12,7 +12,6 @@ import { Badge } from "@/components/ui/badge";
 import { Copy, Download, FileText, IdCard, Printer, RefreshCw, AlertTriangle, Info } from "lucide-react";
 import { toPng } from "html-to-image";
 import jsPDF from "jspdf";
-import { PricingPlans } from "@/components/PricingPlans";
 import { useSubscription } from "@/context/SubscriptionContext";
 import { ALL_STATES, PUBLIC_RECORDS, STOP_AND_ID, CANNABIS, HOSTILE_STATES, NOTICE_RULES, type StateCode } from "@/data/legalDatasets";
 
@@ -142,7 +141,7 @@ const initialState: FormState = {
 export default function LegalToolkitPro() {
   const [state, dispatch] = React.useReducer(reducer, initialState);
   const idCardRef = useRef<HTMLDivElement | null>(null);
-  const { plan, isPro, isEnterprise } = useSubscription();
+  const { plan } = useSubscription();
 
   // Persist key fields (without generated text)
   useEffect(() => {
