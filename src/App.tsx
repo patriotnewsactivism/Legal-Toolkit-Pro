@@ -6,8 +6,8 @@ import { SubscriptionProvider } from "@/context/SubscriptionContext";
 const App: React.FC = () => {
   return (
     <SubscriptionProvider>
-      <div className="min-h-screen bg-background text-foreground">
-        <div className="mx-auto max-w-7xl py-6 px-4">
+      <div className="min-h-screen bg-gradient-to-br from-secondary-50 via-primary-50 to-secondary-50">
+        <div className="container-custom py-4 sm:py-6 lg:py-8">
           <LegalToolkitPro />
         </div>
       </div>
