@@ -3,6 +3,6 @@ import App from "./App";
 
 test("renders toolkit header", () => {
   render(<App />);
-  const heading = screen.getByText(/Civil Rights Legal Toolkit Pro/i);
+  const heading = screen.getByText(/Legal Toolkit Pro/i);
   expect(heading).toBeInTheDocument();
 });
